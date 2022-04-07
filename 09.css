@@ -1,0 +1,30 @@
+h1 {
+	color: red;
+}
+li {
+	list-style-type: none;
+}
+.special {
+	color: orange;
+	font-weight: bold;
+}
+span.special {
+	color: red;
+	font-weight: bold;
+}
+a:link {
+	color: green;
+}
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+li em {
+	color: blue;
+}
+h1 + p {
+	font-size: 200%;
+}
