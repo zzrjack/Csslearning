@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.div1 {
+				border: solid 10px #000;
+				background-color: green;
+				width: 400px;
+				height: 400px;
+			}
+			.div2 {
+				border: 10px solid #000;
+				background-color: green;
+				width: 380px;
+				height: 380px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 盒子尺寸400*400 背景绿色，边框10px实线黑色实际大小为420px=400+10*2 -->
+		<div class="div1">实际大小420px*420px</div>
+		<!-- 实际400px=380+10*2 -->
+		<div class="div2">实际大小400px</div>
+	</body>
+</html>

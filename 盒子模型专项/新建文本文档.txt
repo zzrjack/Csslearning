@@ -1,0 +1,108 @@
+盒子：
+内容区域content（width和height默认设置的是内容部分的宽高）、内边距区域padding、边框区域border、外边距区域margin
+border 单方向设置：border-方向属性///* border 包含下列常见属性： solid 实线；dashed 虚线；dotted 点线 */
+盒子实际大小：
+	左border + 左padding + 内容的宽度 + 右padding + 右border
+	content + padding + border
+    左border + 左padding + 内容的宽度 + 右padding + 右border
+盒子水平居中
+	margin：0 auto
+文本水平居中
+	text-align：center
+外边距折叠现象-塌陷现象的解决方法
+	1、给父元素设置border-top或者padding-top
+	2、给父元素设置overflow:hidden
+	3、转换成行内块元素
+	4、设置浮动
+    
+CSS 三大特性
+	1、继承性
+	2、层叠性
+	3、优先级
+		优先级的公式
+			继承<通配符选择器<标签选择器<类选择器<id选择器<行内样式< !important
+			注意点
+				1、 !important写在属性值的后面，分号的前面
+				2、 !important不能提升继承的优先级，只要是继承，优先级最低！！
+		权重计算
+			（0,0,0,0）
+			从左往右
+				1、行内样式的个数
+				2、id选择器的个数
+				3、类选择器的个数
+				4、标签选择器的个数
+				注意点：如果 !important不是继承，优先级最高！！！
+			比较的规则
+				从左往右一个一个的比较，如果某一位比较出来了，此时后面的统统不看！！！
+				如果发现比较到最后权重是相同的，此时比较层叠性
+		权重计算题的解题步骤
+			1、判断选择器是否可以直接选中标签（如果不能直接选中 → 继承，优先级最低 → pass）
+			2、通过权重计算公式比较即可
+
+dotted
+内边距：padding
+	作用
+		控制边框与内容之间的距离
+	取值
+		一个值
+			上右下左
+		两个值
+			上下
+			左右
+		三个值
+			上
+			左右
+			下
+		四个值
+			上
+			右
+			下
+			左
+		记忆规则：
+			先从上开始赋值，然后顺时针赋值，如果没有赋值的？？？？看对面的！！
+	padding的单方向设置
+		padding-方位名词
+	盒子大小的终极计算公式
+		盒子实际大小 = 内容（content）+ 边框（border）+ 内边距 （padding）
+	不会撑大盒子的特殊情况
+		如果子盒子没有设置宽度，此时宽度默认是父盒子的宽度
+		此时给子盒子设置左右的padding或者左右的border此时不会撑大盒子
+	css3的盒模型
+		自动内减
+		box-sizing:border-box
+
+外边距：margin
+	作用
+		控制边框以外盒子与盒子之间的距离
+	取值
+		一个值
+			上右下左
+		两个值
+			上下
+			左右
+		三个值
+			上
+			左右
+			下
+		四个值
+			上
+			右
+			下
+			左
+		记忆规则：
+			先从上开始赋值，然后顺时针赋值，如果没有赋值的？？？？看对面的！！
+	margin的单方向设置
+		margin-方位名词
+	margin的单方向应用
+		水平方向
+			margin-left
+				让当前盒子往右移动
+			margin-right
+				让右边的盒子往右移动
+		垂直方向
+			margin-top
+				让当前的盒子往下移动
+			margin-bottom
+				让下面的盒子往下移动
+	去除标签默认的margin和padding
+		* {margin：0；padding：0；}
