@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			li:first-child {
+				background-color: green;
+			}
+			li:last-child {
+				background-color: yellow;
+			}
+			li:nth-child(3) {
+				background-color: blue;
+			}
+			li:nth-last-child(3) {
+				background-color: pink;
+			}
+			li:nth-child(4n) {
+				background-color: slateblue;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- ul>li{这是第$个li}*8 -->
+		<!--  1.E：first-child{} 匹配父元素中的第一个子元素，并且是E元素
+          2.E：last-child{}            最后一个子元素，并且是E元素
+          3.E：nth-child(n){}         第n个子元素，并且是E元素
+          4.E：nth-last-child(n){}    倒数第n个子元素，并且是E元素 
+				其中n可以为公式-->
+		<ul>
+			<li>这是第1个li</li>
+			<li>这是第2个li</li>
+			<li>这是第3个li</li>
+			<li>这是第4个li</li>
+			<li>这是第5个li</li>
+			<li>这是第6个li</li>
+			<li>这是第7个li</li>
+			<li>这是第8个li</li>
+		</ul>
+	</body>
+</html>
