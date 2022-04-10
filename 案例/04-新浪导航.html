@@ -14,9 +14,13 @@
 			}
 			/* 子 */
 			.box a {
-				width: 80px;
+				padding: 0 16px;
 				height: 40px;
 				background-color: #fff;
+				/* inline-block（融合行内于块级）:
+				使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行. 
+				能够改变元素的height，width的值. 
+				可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果. */
 				display: inline-block;
 				text-align: center;
 				line-height: 40px;
@@ -33,10 +37,10 @@
 	</head>
 	<body>
 		<div class="box">
+			<a href="#">新浪</a>
 			<a href="#">新浪导航</a>
-			<a href="#">新浪导航</a>
-			<a href="#">新浪导航</a>
-			<a href="#">新浪导航</a>
+			<a href="#">新浪小说</a>
+			<a href="#">新浪！！！</a>
 			<a href="#">新浪导航</a>
 		</div>
 	</body>

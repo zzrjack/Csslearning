@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>新闻列表案列</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.news {
+				width: 500px;
+				height: 400px;
+				border: 1px solid #ccc;
+				margin: 50px auto;
+				padding: 42px 30px 0;
+			}
+			.news h2 {
+				border-bottom: 1px solid #ccc;
+				font-size: 30px;
+				/* line-height 此数字会与当前的字体尺寸相乘来设置行间距
+				line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，
+				分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。 */
+				line-height: 1;
+				padding-bottom: 9px;
+			}
+			ul {
+				/* 去掉原点 */
+				list-style: none;
+			}
+			.news li {
+				height: 50px;
+				border-bottom: 1px dashed #ccc;
+				padding-left: 28px;
+				line-height: 50px;
+			}
+			a {
+				text-decoration: none;
+				color: #666;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 从外到内 先宽高后背景色 放内容 调节内容位置，控制文字细节 -->
+		<div class="news">
+			<h2>最新文章/New Articles</h2>
+			<ul>
+				<li><a href="">北京招聘网页设计，平面设计，php</a></li>
+				<li><a href="">北京招聘网页设计，平面设计，php</a></li>
+				<li><a href="">北京招聘网页设计，平面设计，php</a></li>
+				<li><a href="">北京招聘网页设计，平面设计，php</a></li>
+				<li><a href="">北京招聘网页设计，平面设计，php</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
