@@ -1,0 +1,21 @@
+一、外边距折叠现象
+Ⅰ、外边距合并
+垂直布局的块级元素上下的margin会合并
+最终两者距离为块级元素的margin最大值
+解决方法：
+只给其中一个盒子设置margin
+Ⅱ、塌陷现象
+互相嵌套的块级元素、子元素的margin-top会作用在父元素上
+结果：导致父元素一起往下移动
+解决方法：
+1.给父元素设置border-top或者padding-top（分隔父子元素的imargin-top）
+2⭐⭐⭐.给父元素设置overflow：hidden//overflow:hidden的作用介绍 
+在css的样式中overflow:hidden就是溢出隐藏的意思，顾名思义，
+overflow:hidden最直白的作用就是当元素内的内容溢出的时候使它隐藏溢出的部分
+3.转换成行内块元素即 display：inline
+4.设置浮动
+二、行内元素的垂直内外边距
+如果想要通过margin或padding改变行内标签的垂直位置不生效
+行内标签的padding/margin-top或bottom不生效
+通过line-height设置行高来改变垂直位置
+
