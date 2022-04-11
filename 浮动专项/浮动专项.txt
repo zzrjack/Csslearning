@@ -45,5 +45,34 @@ float
 2.盒子模型：margin padding width height background-color
 3.文字样式
 
+七、清除浮动
+方法1：清除浮动带来的影响（简单粗暴，给父元素设置高度）
+    影响：子元素浮动，子元素不能撑开标准流的块级父元素
+    原因：子元素浮动后脱标，不占位置
+    目的：想要父元素有高度，从而不影响其他网页元素的布局。
+方法2：在父级元素内容的最后添加一个块级元素
+    给添加的块级元素设置clear:both
+特点：
+    缺点：会在页面中添加额外的标签，会让页面的HTML结构变得复杂
+方法3：用伪元素代替额外标签
+①基本写法：
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+    /* 补充写法：在网页中看不到伪元素
+    height：0px;
+    visibility：hidden;
+    
+    */
+}
+优点：项目中使用，可以直接给标签加类即可清除浮动
+
+img {
+	/* 调节图片对齐方式 */
+	vertical-align: middle;
+}
+
+
 
 
