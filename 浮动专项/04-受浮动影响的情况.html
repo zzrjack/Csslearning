@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.top {
+				width: 1000px;
+				/* 法一：父元素一定要加高度，清除浮动影响，保证父元素不被子元素撑开 */
+				/* height: 300px; */
+				background-color: pink;
+				margin: 0 auto;
+			}
+			.bottom {
+				height: 100px;
+				background-color: green;
+			}
+			.left {
+				float: left;
+				width: 200px;
+				height: 300px;
+				background-color: yellow;
+			}
+			.right {
+				float: right;
+				width: 790px;
+				height: 300px;
+				background-color: skyblue;
+			}
+			/* 法二 额外标签 */
+			/* .clearfix {
+				clear: both;
+			} */
+			/* 法三：单伪元素 
+			补充写法height：0px；
+			visibility：hidden；使其看不到伪元素*/
+			/* .clearfix::after {
+				content: "";
+				display: block;
+				clear: both;
+				height: 0px;
+				visibility: hidden;
+			} */
+
+			/* 双伪元素 .clearfix::before 作用：解决外边距塌陷问题*/
+			/* 清除浮动 */
+			.clearfix::before,
+			.clearfix::after {
+				content: "";
+				display: table;
+			}
+			/* 真正清除浮动的标签 */
+			.clearfix::after {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 父子元素，子级浮动，父级没有高度则会受到浮动影响 -->
+		<div class="top clearfix">
+			<div class="left"></div>
+			<div class="right"></div>
+			<!-- 法二：额外标签法 -->
+			<!-- <div class="clearfix"></div> -->
+			<!-- 法三：单伪元素
+					 法四：双伪元素 -->
+			<!-- 法五，给父元素设置overflow:hidden -->
+		</div>
+		<div class="bottom"></div>
+	</body>
+</html>
