@@ -183,3 +183,152 @@ h1 {
 	letter-spacing: 2px;
 	color: #00a4ff;
 }
+.goods {
+	height: 60px;
+	padding-left: 34px;
+	padding-right: 26px;
+	background-color: #fff;
+	margin-top: 8px;
+	box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+	line-height: 60px;
+}
+.goods h2 {
+	float: left;
+	font-size: 16px;
+	color: #00a4ff;
+	font-weight: 400;
+}
+.goods ul {
+	float: left;
+	margin-left: 30px;
+}
+.goods ul li {
+	float: left;
+}
+.goods li a {
+	border-left: 1px solid #bfbfbf;
+	padding: 0 33px;
+	color: #050505;
+	font-size: 16px;
+	font-family: MicrosoftYaHei;
+}
+.goods .xingqu {
+	float: right;
+	font-size: 14px;
+	color: #00a4ff;
+}
+.box {
+	margin-top: 35px;
+}
+.box .title {
+	height: 40px;
+}
+.box .title h2 {
+	float: left;
+	font-size: 20px;
+	color: #494949;
+	font-weight: normal;
+	line-height: 40px;
+}
+.box .title a {
+	float: right;
+	font-size: 12px;
+	color: #a5a5a5;
+	line-height: 40px;
+	font-weight: normal;
+	margin-right: 35px;
+}
+.box .content li {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 228px;
+	height: 270px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+}
+.box .content li:nth-child(5n) {
+	margin-right: 0;
+}
+.box .content li h3 {
+	margin: 20px 25px 20px 24px;
+	width: 184px;
+	height: 32px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #050505;
+}
+.box .content li span {
+	width: 121px;
+	height: 11px;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ff7c2d;
+}
+.box .content li p {
+	margin-top: 20px;
+	margin-left: 23px;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.footer {
+	margin-top: 40px;
+	padding-top: 30px;
+	height: 417px;
+	background-color: #fff;
+}
+.footer .left {
+	float: left;
+}
+.footer .left p {
+	margin: 20px 0 10px;
+	width: 426px;
+	height: 30px;
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+.footer .left a {
+	margin-top: 25px;
+	display: inline-block;
+	width: 120px;
+	height: 36px;
+	font-size: 16px;
+	border: 1px solid #00a4ff;
+	line-height: 36px;
+	text-align: center;
+	color: #00a4ff;
+}
+.footer .right dl {
+	float: right;
+	margin-left: 120px;
+}
+.footer .right dt {
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.footer .right dd a {
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
