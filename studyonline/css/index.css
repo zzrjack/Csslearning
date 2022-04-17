@@ -332,3 +332,11 @@ h1 {
 	letter-spacing: 0px;
 	color: #333333;
 }
+.box .content li {
+	position: relative;
+}
+.box .content li .hot {
+	position: absolute;
+	right: -4px;
+	top: 4px;
+}
