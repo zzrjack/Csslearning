@@ -1,0 +1,16 @@
+复合属性：位移，旋转角度：transform：translate（600px） rotate（360deg）
+
+时间：transition：0.5s
+缩放：transform：scale（缩放倍数）注意层叠
+渐变：background-image: linear-gradient(
+                transparent,
+                rgba(0,0,0, .6)
+            );
+perspective： 透视效果
+transform：translateZ（Z轴位移，向我们 通过父级加透视属性可以观察到）
+transform：rotateZ 绕Z轴转
+	rotateX	x轴转
+	rotateY	y轴转
+立体呈现：
+	transform-style：preserve-3d
+	使子元素处于真正的3d空间
