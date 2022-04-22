@@ -1,0 +1,38 @@
+animation：添加动画效果
+	过渡可以实现两个状态间的变化过程
+动画效果：实现多个状态间的变化过程，动画过程可控（重复播放、最终画面、是否暂停）
+实现步骤：
+1.定义动画
+@keyframes 动画名称{
+from{}
+to{}
+}
+//百分比指的是动画占用时长百分比
+@keyframes 动画名称{
+    0%{}
+    10%{}
+    15%{}
+    100%{}
+}
+2.使用动画
+animation:动画名称 动画花费时长；
+动画属性：
+animation:动画名称 动画时长 速度曲线 延迟时间 重复次数 动画方向 执行完毕时的状态;
+名称时长必须赋值
+取值不分先后
+如果有两个时间值 第一个表示动画时长 第二个表示延迟时间
+infinite 表示无限循环
+backward表示执行完毕状态为初始（默认值，动画停留在最初的状态），forward为变化后（停留在结束的状态）
+拆分写法：
+    -name
+    -duration
+    -delay
+    -fill-mode 动画执行完毕时的状态
+    -timing-function 速度曲线
+    -iteration-count 重复次数 取值steps(数字):逐帧动画
+    -direction:alternate（反向）
+    -play-state：paused（暂停，通常配合:hover使用）
+3.利用steps实现逐帧动画
+一般配合精灵图实现动画效果
+    animation-timing-function:steps(N);
+    将动画过程等分成N份
