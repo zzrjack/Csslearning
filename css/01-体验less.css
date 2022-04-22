@@ -1,0 +1,17 @@
+.father {
+  color: red;
+  width: 1.81333333rem;
+}
+.div {
+  color: green;
+  width: 500px;
+  height: 500px;
+}
+.div .son {
+  width: 100px;
+  height: 200px;
+  color: red;
+}
+.div .son :hover {
+  color: blue;
+}
