@@ -17,5 +17,21 @@
 
 BootStrap框架！:
     调用类：
-        container：响应式布局版心类
+        .container：响应式布局版心类,默认指定宽度且居中
+        .container-fluid:，宽度均为100%
+        分别使用.row类名和.col类名定义栅格布局的行和列
+    注意：
+        container类自带间距15px
+        row类自带间距-15px
         
+栅格系统
+    默认将网页分成12等分
+    xs <768px 100%
+    sm>=768px 750px
+    md>=992px   970px
+    lg>=1200px  1170px
+    列间隙30px
+    类前缀col-xs-*
+         col-sm-*
+         ......
+    
