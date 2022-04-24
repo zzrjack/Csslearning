@@ -1,0 +1,21 @@
+差异化样式
+    开发常用写法：
+        max-width
+        min-width
+@media(媒体特性){
+    选择器{
+        样式
+    }
+
+}
+隐藏：
+    @media(max-width:768px){
+        选择器{
+            display：none；
+        }
+    }
+
+BootStrap框架！:
+    调用类：
+        container：响应式布局版心类
+        
