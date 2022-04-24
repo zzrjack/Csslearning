@@ -1,0 +1,23 @@
+@import url(./base.less);
+// 头部固定区域
+@vw: 3.75vw;
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: (84 / @vw);
+	// background-color: pink;
+}
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: (44 / @vw);
+	padding-left: (18 / @vw);
+	background-color: blue;
+}
+.bottom {
+	height: (40 / @vw);
+	border-bottom: 1px solid #eee;
+}

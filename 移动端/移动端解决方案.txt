@@ -65,5 +65,12 @@ Rem适配原理
 	实现在不同宽度的设备中，元素网页尺寸等比缩放的效果（px=>rem）
 通过使用flexible.js配合Rem实现在不同宽度的设备中，网页元素尺寸等比缩放效果
 	根据不同的视口宽度给网页中html根节点设置不同的font-size	
-
+VW/VH
+    相对单位；
+    相对于视口的尺寸计算结果
+    vw：viewport width
+        1vw=1/100视口宽度
+    vh：viewport height
+        1vh=1/100视口高度
+vw单位尺寸=px单位数值/（1/100视口宽度）
 	
